@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:     
+  web:
+    container_name: 6_web-app-calculator-jenkins
+    hostname: app
+    build: App_practical/6_Calculator/6_Calculator/ 
+    ports:
+      - "0.0.0.0:5206:5006"
+
